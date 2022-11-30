@@ -42,14 +42,14 @@ main {
   margin-left: 200px;
   padding: 0 10px;
 }
-.reel-img {
+/* .story-img {
   --border-width: 2px;
   --border-radius: 50%;
   --color-1: #f19f39;
   --color-2: #de222c;
 }
-.reel-img {
-  width: 70px;
+.story-img {
+  width: 200px;
   border-radius: 50%;
   background: linear-gradient(to right, orange, red),
     linear-gradient(to right, orange, red);
@@ -63,8 +63,8 @@ main {
 
   position: relative;
 }
-.reel-img::before,
-.reel-img::after {
+.story-img::before,
+.story-img::after {
   content: "";
   display: block;
   position: absolute;
@@ -72,21 +72,21 @@ main {
   top: 0;
   bottom: 0;
 }
-.reel-img::before {
+.story-img::before {
   left: 0;
   border: var(--border-width) solid var(--color-1);
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
   border-right-color: transparent;
 }
-.reel-img::after {
+.story-img::after {
   right: 0;
   border: var(--border-width) solid var(--color-2);
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
   border-left-color: transparent;
-}
-/* .reel img::after{
+} */
+/* .story img::after{
     content: "";
   position: absolute;
   top: 0;
@@ -98,3 +98,38 @@ main {
   border-radius: inherit;
   background-image: linear-gradient(45deg, purple, orange);
 } */
+
+.stories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+.story p {
+  font-size: 0.8em;
+}
+
+/* Main styling */
+.story-img {
+  border-radius: 50%;
+  width: 50px;
+  border: 2px solid red;
+}
+.sec1 > img {
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+.feed {
+  width: 50%;
+  border: 1px solid grey;
+  margin-top: 1em;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
