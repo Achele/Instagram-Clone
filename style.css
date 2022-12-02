@@ -119,7 +119,7 @@ main {
   align-items: center;
   justify-content: space-between;
   border: 1px solid rgb(211, 207, 207);
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   padding: 1em;
   background: white;
@@ -139,6 +139,7 @@ main {
   width: 66px;
   height: 66px;
   position: relative;
+  margin: 0.5em;
 }
 .story-img {
   border-radius: 50%;
@@ -172,7 +173,7 @@ main {
   padding: 0.5em;
 }
 .feed {
-  width: 75%;
+  width: 85%;
   border: 1px solid rgb(211, 207, 207);
   /* margin-top: 1em; */
   margin: 1em auto;
@@ -183,8 +184,29 @@ main {
   align-items: center;
   justify-content: space-between;
   background: white;
-  padding: 1em;
+  padding: 0.5em;
   /* box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1); */
+}
+.header-wrapper {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, yellow, rgb(255, 0, 212)) border-box;
+  border-radius: 50%;
+  padding: 3px;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  margin: 0.5em;
+}
+.header-img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  /* border: 2px solid white; */
+  position: absolute;
+  /* top: -5px; */
+  /* left: -5px; */
+  /* clip-path: circle(); */
 }
 .header > h3 {
   font-size: 0.5em;
@@ -219,12 +241,29 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(211, 207, 207);
+  padding: 0.5em;
+  /* box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1); */
 }
 .add1 {
   display: flex;
-  align-items: center;
-  margin-left: 0.5em;
+  /* width: 50%; */
+  /* align-items: center; */
+  /* margin-left: 0.5em; */
+}
+.fa-icon {
+  padding: 10px;
+  /* background: dodgerblue; */
+  /* color: white; */
+  min-width: 50px;
+  text-align: center;
+}
+.input-field {
+  width: 100%;
+  /* padding: 10px; */
+  outline: none;
+  border-style: none;
+  background: rgb(250, 248, 248);
 }
 .blue {
   color: dodgerblue;
@@ -241,6 +280,10 @@ main {
 }
 .first-sec {
   padding-left: 1em;
+}
+.bottom-sec > p,
+.bottom-sec > h3 {
+  padding: 0.5em 0;
 }
 .profile-title > p {
   margin-left: 5em;
