@@ -130,11 +130,24 @@ main {
 }
 
 /* Main styling */
+.story-img-wrapper {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, yellow, rgb(255, 0, 212)) border-box;
+  border-radius: 50%;
+  padding: 3px;
+  width: 66px;
+  height: 66px;
+  position: relative;
+}
 .story-img {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  border: 2px solid red;
+  width: 56px;
+  height: 56px;
+  /* border: 2px solid white; */
+  position: absolute;
+  /* top: -5px; */
+  /* left: -5px; */
   /* clip-path: circle(); */
 }
 .sec1 {
@@ -142,12 +155,17 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-.sec1 > img {
+/* .sec1> img {
   width: 20px;
   border-radius: 50%;
   border: 2px solid red;
   margin-left: 0.5em;
   clip-path: circle();
+} */
+.sec1 > #sideProfile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 .sec1 > h3 {
   font-weight: 300;
@@ -180,6 +198,7 @@ main {
   justify-content: space-between;
   /* margin: .5em; */
 }
+
 .fa-regular {
   /* font-size: 2em; */
 }
@@ -242,6 +261,7 @@ main {
   padding-top: 1em;
   font-size: 0.8em;
 }
+
 .list {
   margin: 0.18em;
   text-decoration: dotted;
